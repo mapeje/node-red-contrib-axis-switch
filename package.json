@@ -7,7 +7,7 @@
 	"keywords": ["node-red","Axis"],
 	"node-red": {
 		"nodes": {
-			"Axis Template": "axis-template.js"
+			"Axis Switch": "axis-switch.js"
 		}
 	},
 	"dependencies": {
