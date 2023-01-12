@@ -26,7 +26,7 @@ module.exports = function(RED) {
 			console.log(action);
 
 			switch( action ) {
-				case "Get":
+				case "Get properties":
 					var cgi = "/axis-cgi/param.cgi?action=list&group=properties";
 					HTTP_digest.get( device, cgi, "text", function( error, response ) {
 						msg.payload = response;
