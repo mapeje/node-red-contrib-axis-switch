@@ -26,8 +26,8 @@ module.exports = function(RED) {
 			console.log(action);
 
 			switch( action ) {
-				case "Get properties":
-					var cgi = "/axis-cgi/param.cgi?action=list&group=properties";
+				case "Get port status":
+					var cgi = "/axis-cgi/nvr/poe/getportstatuses.cgi?schemaversion=1";
 					HTTP_digest.get( device, cgi, "text", function( error, response ) {
 						msg.payload = response;
 						if( error ) {
